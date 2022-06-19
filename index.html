@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onkeydown="checker(event)">
+    <h1>Weather</h1>
+    <div class="ip_container">
+        <input id="area_ip" type="text" placeholder="Please enter your location"><button class="search_btn" onclick="checker(event)">🔎</button>
+        <button class="my_location" onclick="getLocation()">🏡</button>
+    </div>
+    <div class="weather_today">
+        <div class="weather_today_left">
+            <div><img id="weather_img"></div>
+            <div>
+                <p id="temp"></p> &ensp;<sup><button id="unit_change" onclick="unitChange(event)">℉</button></sup>
+                <p id="desc"></p>
+                <p id="location"></p>
+            </div>
+        </div>
+        <div class="weather_today_right">
+            <p id="temp_feels_like"></p>
+            <p id="wind_speed"></p>
+            <p id="humidity"></p>
+            <p id="visibility"></p>
+        </div>
+    </div>
+    <div class="weather_5days">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

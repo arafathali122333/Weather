@@ -1,0 +1,115 @@
+p {
+    margin: 0;
+}
+
+
+/*Title & Inuput container*/
+
+.ip_container,
+h1 {
+    text-align: center;
+    font-family: Rockwell Extra Bold, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(211, 94, 68);
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px 9px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(229, 214, 214);
+    border-right: none;
+}
+
+.search_btn {
+    background-color: #ffffff;
+    padding: 0px 4px 7px 0px;
+    font-size: 140%;
+    border: 1px solid rgb(229, 214, 214);
+    border-left: none;
+    cursor: pointer;
+}
+
+.my_location {
+    background-color: #ffffff;
+    border: none;
+    font-size: 140%;
+    cursor: pointer;
+}
+
+
+/*weather container*/
+
+.weather_today {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.weather_today_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#unit_change {
+    background-color: #0f96f1;
+    border: none;
+    color: white;
+    padding: 4px 7px;
+    font-size: 150%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#temp,
+.temp_daily {
+    font-size: 200%;
+    font-weight: bold;
+    display: inline;
+}
+
+#desc,
+#date_dailyweather {
+    font-size: 140%;
+    font-style: italic;
+}
+
+#location,
+#windspeed_daily {
+    font-size: 140%;
+    font-variant: small-caps;
+}
+
+.weather_today_right {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#weather_img {
+    height: 150px;
+}
+
+.weather_5days {
+    display: flex;
+    overflow-x: scroll;
+    margin: 5% 12%;
+    justify-content: space-between;
+}
+
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+    height: 4px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(222, 214, 214);
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #a49b9b;
+}
